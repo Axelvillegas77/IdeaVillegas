@@ -1,68 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title> Torras Motos </title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Torras Motos</title>
+	<link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-    <header>
-        <h1 id="titulo"> Torras Motos </h1>
-    </header>
-    <hr>
-    <section>
-        <h2 id="subtitulo"> Nuestros Productos y Accesorios </h2>
-        <div id="divPadre">
-            <label for="ingreso"> Escribe el repuesto que buscas</label>
-            <input type="text" name="ingreso" value="" id="ingreso">
+	<header>
+		<h1>Torras Motos</h1>
 
-            <button id="boton"> Buscar </button>
-        </div>
-    </section>
-    <!-- contenido principal  -->
-    <main class="catalogoMain">
-        <div class="containerCatalogo">
-            <div class="containerUno">
-                <img src="img/cascocatalogo.jpg" alt=" catalogo de cascos ">
-                <h3> Catalogo de cascos </h3>
-            </div>
+		<div class="container-icon">
+			<div class="container-cardt-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+					stroke="currentColor" class="icon-cart">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+				</svg>
+				<div class="count-products">
+					<span id="contador-productos">0</span>
+				</div>
+			</div>
 
-            <div class="containerDos">
-                <img src="img/escapecatalogo.jpg" alt=" catalogo de escapes ">
-                <h3> Catalogo de escapes </h3>
-            </div>
 
-            <div class="containerTres">
-                <img src="img/catalogoplasticos.jpg" alt=" catalogo de plasticos para moto  ">
-                <h3> Catalogo de plasticos </h3>
-            </div>
-        </div>
+			<div class="container-cart-products hidden-cart">
+				<div class="row-product">
+					<div class="cart-product">
+						<div class="info-cart-product">
+							<span class="cantidad-producto-carrito">1</span>
+							<p class="titulo-producto-carrito">Casco Rebatible</p>
+							<span class="precio-producto-carrito">$25.000</span>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="icon-close">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</div>
+				</div>
 
-        <div class="containerCatalogoDos">
-            <div class="containerCuatro">
-                <img src="img/catalogocorona.jpg" alt=" catalogo de trasmision para moto ">
-                <h3> Catalogo de trasmision </h3>
-            </div>
+				<div class="cart-total">
+					<h3>Total:</h3>
+					<span class="total-pagar">$25000</span>
+				</div>
+			</div>
+		</div>
+	</header>
 
-            <div class="containerCinco">
-                <img src="img/catalogocubiertas.png" alt=" catalogo de cubiertas para moto  ">
-                <h3> Catalogo de cubiertas </h3>
-            </div>
+	<main>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img src="img/cascocatalogo.jpg" alt="producto" />
+				</figure>
+				<div class="info-product">
+					<h2>Casco Rebatible</h2>
+					<p class="price">$25000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="img/catalogocorona.jpg" alt="producto" />
+				</figure>
+				<div class="info-product">
+					<h2>Trasmision</h2>
+					<p class="price">$6000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="img/catalogocubiertas.png" alt="producto" />
+				</figure>
+				<div class="info-product">
+					<h2>Cubiertas</h2>
+					<p class="price">$19000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="img/catalogoplasticos.jpg" alt="producto" />
+				</figure>
+				<div class="info-product">
+					<h2>Kit de plasticos</h2>
+					<p class="price">$14000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="img/escapecatalogo.jpg" alt="producto" />
+				</figure>
+				<div class="info-product">
+					<h2>Escapes</h2>
+					<p class="price">$8500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+	</main>
 
-            <div class="containerSeis">
-                <img src="img/ledcatalogo.png" alt=" catalogo de faroles auxiliares de led ">
-                <h3> Catalogo creed led </h3>
-            </div>
-        </div>
-    </main>
-
-    <footer></footer>
-
-    <script src="js/main.js"></script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>
